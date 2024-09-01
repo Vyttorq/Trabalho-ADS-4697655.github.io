@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de apresentação - Vyttor Mendes</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            letter-spacing: 0.5px;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+        nav {
+            background-color: rgb(34, 34, 34); 
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 40px auto 10px auto; 
+            background-color: rgb(40, 40, 40); 
+            border-radius: 15px;
+            border: 2px solid rgb(47, 153, 240);
+            width: 80%; 
+            text-align: justify; /* Justifica o texto */
+            display: flex; /* Adiciona flexbox para o layout */
+            flex-direction: column; /* Organiza o conteúdo verticalmente */
+        }
+        h1 {
+            color: rgb(47, 153, 240);
+            text-align: left; /* Alinha os títulos à esquerda */
+        }
+        .portfolio-content, .sobre-content {
+            display: flex; /* Adiciona flexbox para o layout do conteúdo */
+            align-items: flex-start; /* Alinha itens no início do contêiner */
+            gap: 20px; /* Espaço entre a imagem e o texto */
+        }
+        .portfolio-img, .sobre-img {
+            width: 465px; 
+            height: 456px; 
+            border-radius: 10px;
+        }
+        .portfolio-text, .sobre-text {
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+        }
+        .sobre-img {
+            width: 400px; 
+            height: 400px; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: white;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(47, 153, 240);
+            background-color: rgb(34, 34, 34);
+            color: white;
+            margin-bottom: 10px;
+        }
+        textarea {
+            resize: vertical; 
+            min-height: 100px;
+        }
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(47, 153, 240);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(30, 130, 220);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h1>Sobre Mim</h1>
+        <div class="sobre-content">
+            <div class="sobre-text">
+                <p>Como principal hobbie, o acesso à internet também me abriu as portas à um novo mundo. Dessa forma, buscando 
+                    compreendê-la, crio e procuro novas maneiras de interagir e gerir os espaços disponíveis dentro dessa árvore-mãe 
+                    das informações.</p>
+                <p> O empreendedorismo me apetece, e a conclusão que tiro dos dados provenientes dos estudos atuais me fazem confiante 
+                    para o futuro da computação. </p>
+                <p> Gosto de prestar atenção no que acontece no mundo, assisto a filmes e outras artes visuais que me estimulem. 
+                    À isso tento buscar aprender sempre algo novo, a última vez foi como esculpir uma mão em madeira!</p>
+                <p> Estou cursando na Uninter hoje e trabalho no mesmo local, no setor de retenção de alunos! Na minha visão, 
+                    o estudo é uma das coisas mais importantes que podemos fazer hoje em dia, dessa forma digo aos alunos e alunas e dou incentivo para continuar.</p>
+            </div>
+            <img src="https://vyttorq.github.io/Trabalho-ADS-4697655.github.io/IMG_20240531_204206_377.jpg" alt="Imagem Sobre Mim" class="sobre-img">
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h1>Formação</h1>
+        <p><b>Ensino médio completo:</b> Colégio SESC SJ - BOM JESUS</p>
+        <p><b>Ensino Superior:</b> Análise e Desenvolvimento de Sistemas (ADS) - UNINTER</p>
+        <p><b>Curso profissionalizante:</b> Assistente Administrativo SENAC - PR</p>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <div class="portfolio-content">
+            <div class="portfolio-text">
+                <p>Estou trabalhando em um projeto para a confecção de um banco de dados para um estacionamento local, antes disso 
+                entreguei uma base de esquema relacionamento-entidade no formato constelação à uma empresa de free-lance. Meu design foi aprovado.</p>
+                <p> Fiz um trabalho de banco de dados também referenciando uma livraria, disponibilizo através do link: <br> https://drive.google.com/file/d/1plsg7j1bX-8aMcPLHdwSxhk01PAbxaV7/view?usp=sharing</p>
+                <p> Estou ainda na ciração de outros projetos, os quais vou postar na página do GitHub. Em alguns dias <br>
+                estará disponível algumas artes que aprendi a fazer.</p>
+                <p> Outro trabalho recente foi o MER à direta.</p>
+            </div>
+            <img src="https://vyttorq.github.io/Trabalho-ADS-4697655.github.io/Atividade%20Pr%C3%A1tica%20VyttorMendes%204697655.drawio.png" alt="Imagem Portfólio" class="portfolio-img">
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h1>Contato</h1>
+        <p><b>E-mail:</b> vyector@gmail.com</p>
+        <p><b>Telefone:</b> (41)99587-6098</p>
+        <h1>Me mande uma mensagem</h1>
+        <form action="enviar_mensagem.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
